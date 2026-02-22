@@ -93,7 +93,7 @@
         <div class="attribute-value">
           <input name="system.movement.base" title="{{localize 'WWN.movement.round'}}" type="number"
             value="{{system.movement.base}}" placeholder="30" data-dtype="Number" {{#if
-            system.config.movementAuto}}disabled{{/if}} />
+            system.config.movementAuto}}disabled{{/if}}/>
         </div>
         {{#if config.showMovement}}
         <div class="attribute-value attribute-mod">
@@ -101,6 +101,15 @@
             value="{{system.movement.exploration}}" data-dtype="Number" disabled />
         </div>
         {{/if}}
+      </li>
+      <li class="attribute ability-score">
+        <h4 class="attribute-name box-title" title="{{ localize 'WWN.rationing.short'}}">
+          {{localize 'WWN.rationing.short'}}
+        </h4>
+        <div class="attribute-value attribute-mod">
+          <input name="system.details.rationing.state" title="{{localize 'WWN.rationing.state'}}" type="checkbox"
+            value="{{system.rationing.state}}"{{checked system.details.rationing.state}} data-dtype="Boolean" />
+        </div>
       </li>
     </ul>
   </div>
@@ -165,6 +174,19 @@
         </div>
       </li>
       {{/if}}
+      <li class="attribute ability-score">
+        <h4 class="attribute-name box-title" title="{{ localize 'WWN.StressShort' }}">
+          {{ localize "WWN.StressShort" }}
+        </h4>
+        <div class="attribute-value">
+          <input name="system.details.stress.value" type="number" value="{{system.details.stress.value}}"
+            data-dtype="Number" placeholder=0 title="{{ localize 'WWN.Stress' }}" />
+        </div>
+        <div class="attribute-value attribute-mod">
+          <input name="system.details.stress.max" type="number" value="{{system.details.stress.max}}"
+            data-dtype="Number" placeholder=0 title="{{ localize 'WWN.StressMax' }}" />
+        </div>
+      </li>
 
     </ul>
     {{!-- Saving throws --}}
