@@ -397,7 +397,8 @@
       "effects": {
         "active": false,
         "list": [ ]
-      }
+      },
+      "condition": "Perfect"
     },
     "weapon": {
       "range": {
@@ -439,7 +440,8 @@
         "value": 0,
         "max": 0,
         "decrementOnAttack": false
-      }
+      },
+      "condition": "Perfect"
     },
     "armor": {
       "description": "",
@@ -455,7 +457,8 @@
       "weight": 0,
       "ashesHeavy": false,
       "isShield": false,
-      "containerId": ""
+      "containerId": "", 
+      "condition": "Perfect"
     },
     "spell": {
       "lvl": 1,

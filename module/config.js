@@ -164,5 +164,14 @@ export const WWN = {
     low: "WWN.asset.magicLow",
     medium: "WWN.asset.magicMedium",
     high: "WWN.asset.magicHigh",
+  },
+  gearCondition: {
+    perfect: "WWN.conditionPerfect",
+    worn: "WWN.conditionWorn",
+    lightDamage: "WWN.conditionLight",
+    moderateDamage: "WWN.conditionModerate",
+    heavyDamage: "WWN.conditionHeavy",
+    broken: "WWN.conditionBroken", 
+    ruined: "WWN.conditionRuined"
   }
 };

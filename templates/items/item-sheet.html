@@ -87,6 +87,15 @@
                 title="{{localize 'WWN.items.MaxCharges'}}" />
             </div>
           </div>
+          <div class="form-group">
+            <label>{{localize 'WWN.condition'}}</label>
+            <div class="form-fields">
+              <select name="system.condition">
+                {{selectOptions config.gearCondition selected=system.condition localize=true}}
+              </select>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
